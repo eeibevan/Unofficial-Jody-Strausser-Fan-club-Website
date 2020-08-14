@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Jody Strausser</title>
+    <style>
+        body {
+            background: lightblue;
+        }
+
+        #face {
+            background-image:
+                    url('foreground-tile.png'),
+                    url('center-tile.png'),
+                    url('background-tile.png');
+            height: 100%;
+            z-index: -1;
+            left: 0;
+            position: absolute;
+            top: 0;
+            width: 100%;
+            animation: snow 75s linear infinite;
+            transform: translate3d(0,0,0);
+        }
+        @keyframes snow {
+            0% {
+                background-position:
+                        0 0, /* foreground-tile.png */
+                        0 0, /* center-tile.png */
+                        0 0; /* background-tile.png */
+            }
+            100% {
+                /*
+                Use Large px values,
+                since percentages will change the speed
+                based on the screen size
+                */
+                background-position:
+                        9999px 9999px, /* foreground-tile.png */
+                        9999px 9999px, /* center-tile.png */
+                        -9999px 9999px; /* background-tile.png */
+            }
+        }
+    </style>
+</head>
+
+<body>
+<div id="face"></div>
+
+</body>
+</html>
