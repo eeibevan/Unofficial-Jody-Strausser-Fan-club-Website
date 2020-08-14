@@ -1,4 +1,4 @@
-The source for the _Unofficial Jody Strausser Fan Club_ website at [jodystrausser.com](http://jodystrausser.com)
+The source for the _Unofficial Jody Strausser Fan Club_ website at [jodystrausser.com](https://jodystrausser.com)
 
 Jody Strausser is a professor at
 [Clarion University of Pennsylvania](https://clarion.edu/)
